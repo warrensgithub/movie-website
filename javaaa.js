@@ -22,6 +22,9 @@ fetch('https://imdb-top-100-movies.p.rapidapi.com/', topmovies)
             const name = item.title;
             const poster = item.image;
             const descr = item.description
+            const year = item.year;
+            const trailer = item.trailer;
+            const genre = item.genre;
             const movie = `<li><img src ="${poster}"></img><h2>${name}</h2></li>`
             document.querySelector(".movies").innerHTML += movie;
         })
