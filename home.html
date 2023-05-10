@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel ="stylesheet" href ="style.css"/>
+<form>
+<style>
+    .loader{
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        background-color: darkcyan;
+        transition: opacity 1s visibility 1s;
+    }
+    .loader--hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .loader::after{
+        content: "";
+        width: 75px;
+        height:75px;
+        border:15px solid #dddd;
+        border-top-color: lightgreen;
+        border-radius: 50%;
+        animation: loading 1s ease infinite;
+    }
+    @keyframes loading {
+        from {transform: rotate(0turn)}
+        to {transform: rotate(1turn) }
+    }
+</style>
+<div class="loader"></div><script>window.addEventListener("load", () =>{
+    document.querySelector(".loader").classList.add("loader--hidden")
+    });</script>
+<h1>Cinema Space</h1>
+<div class="topnav"><input type="text" id="srchBar" name="q" placeholder="search for a movie" ></input>
+<button class="search-button" type="button" id="myBttn"><i class="fa fa-search"></i></button></div>
+<div class="movies">
+<script src = "javaaa.js"></script>
+</div>
+<div> </div>
+</form>
+</html>

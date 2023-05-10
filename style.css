@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family-sans-serif");
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-image: url("wp7577832.png");
+}
+.movies{
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie:hover{
+    transform: scale(1.1);
+}
+.movies li:hover{
+    transform: scale(1.1);
+}
+.movies li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 9px;
+    text-align: center;
+    
+}
+.movies li img{
+    max-width: 240px;
+    border-radius: 12px;
+}
+.movies li h2{
+    color:aliceblue;
+    font-size: 1.8em;
+    padding:  15px 10px;
+    margin-top: auto;
+    font-family: sans-serif;
+}
+.topnav button{
+    height: 35px;
+    width: 35px;
+    float: right;
+    cursor: pointer;
+    display: flex;
+    color: darkcyan;
+    padding: none;
+    border-radius: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: aquamarine;
+    font-size: 17px;
+    border-left: none;
+}
+.topnav{
+    overflow: hidden;
+  background-color: #e9e9e9;
+}
+.topnav input[type=text] {
+    display: flex;
+    float: right;
+    padding: 6px;
+    border-radius: 60px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.topnav button:hover{
+    background: beige;
+    
+}

@@ -1,0 +1,5 @@
+movie reviews
+search/filter/categories
+log in/SQL database
+watch trailer?
+where to watch it
